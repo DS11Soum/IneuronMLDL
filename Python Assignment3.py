@@ -31,10 +31,7 @@ like Python's built-in function filter()"""
 # filter() function in python has takes in 2 arguments viz. (function, iterable).
 
 def myfilter(func1, seq1):
-    result = []
-    for item1 in seq1:
-        if func1(item1) is True:
-            result.append(item1)
+    result = [item1 for item1 in seq1 if func1(item1)]
     return result
 
 
